@@ -1,9 +1,7 @@
-//arquivo de rotas
 const { Router } = require('express')
-const Cadeira = require('./models/Cadeira.js')
+const Cadeira = require('./models/Cadeira')
 
 const routes = Router()
-
 
 routes.get('/pagas', async (req, res) => {
     const data = await Cadeira.find()
@@ -29,4 +27,5 @@ routes.post('/pagas',  async (req, res) => {
     return res.send(cadeira)
 })
 
-module.exports = routes;
+
+module.exports = routes

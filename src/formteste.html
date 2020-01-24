@@ -1,0 +1,21 @@
+<h1>GRADE CURRICULAR</h1>
+
+<h2>Insira suas cadeiras pagas aqui:</h2>
+
+<form action="/pagas" method="POST">
+    Nome da cadeira <input type="text" name="nome">
+    Tipo da cadeira <input type="text" name="tipo">
+    Período <input type="number" name="periodo">
+    Carga horaria <input type="number" name="cargaHoraria">
+    Creditos <input type="number" name="creditos">
+    Nota <input type="text" name="nota">
+
+    <button formaction="http://localhost:3003/pagas">Incluir</button>
+</form>
+
+<style>
+    input {
+        display: block;
+        margin-bottom: 10px;
+    }
+</style>
